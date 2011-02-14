@@ -7,6 +7,7 @@ nl:
         blank: 'dit mag niet leeg zijn' # required
         invalid: 'dit komt niet overeen met de verwachtte indeling' #invalid_format
         not_a_number: 'dit moet een getal zijn' # must be number
+        not_permitted: 'dit moet één van de toegelaten waarden zijn' # this must be one of the permitted values
         taken: 'deze naam reeds in gebruik' # name_in_use
         too_long: 'dit mag maximum {{count}} tekens bevatten' # character_limit
         too_short: 'dit moet minimum {{count}} tekens bevatten' # character_minimum
@@ -39,6 +40,31 @@ nl:
   cancel: 'Annuleren'
   change: 'Wijzigen'
   close: 'Sluiten'
+  config:
+    admin:
+      title: 'admin hoofding titel'
+    defaults:
+      locale: 'standaard taal'
+      page:
+        fields: "pagina velden"
+        filter: "pagina filter"
+        parts: "page parts"
+        status: "pagina status"
+      snippet:
+        filter: "snippet filter"
+    dev:
+      host: "dev site domeinnaam"
+    errors:
+      blank: 'dit mag niet blanco zijn'
+      not_a_number: 'dit moet een getal zijn'
+      not_permitted: 'dit moet één van de beschikbare waarden zijn'
+    local:
+      timezone: "lokale tijdzone"
+    site:
+      host: "site domein"
+      name: "site naam"
+    user:
+      allow_password_reset?: "Paswoord-reset toestaan?"
   content: 'Inhoud'
   content_type: 'InhoudsType'
   creating_status: '{{model}}&#8230; aan het maken'
@@ -61,8 +87,12 @@ nl:
   design: 'Ontwerp'
   designer: 'Ontwerper'
   draft: 'Ontwerp'
+  edit: 'Aanpassen'
+  edit_configuration: 'Configuratie Wijzigen'
   edit_layout: 'Layout Wijzigen'
   edit_page:  'Pagina Wijzigen'
+  edit_preferences: 'Voorkeuren Wijzigen'
+  edit_settings: 'Instellingen Wijzigen'
   edit_snippet: 'Snippet Wijzigen'
   edit_user: 'Gebruiker Wijzigen'
   email_address: 'E-mailadres'
@@ -88,9 +118,11 @@ nl:
   new_password: 'Nieuw Wachtwoord'
   new_snippet: 'Nieuwe Snippet'
   new_user: 'Nieuwe Gebruiker'
+  no: 'Neen'
   no_layouts: 'Geen Layouts'
   no_pages: "Geen Pagina's"
   no_snippets: "Geen Snippets"
+  normal_page: 'Gewone Pagina'
   notes: 'Notities'
   optional: 'Optioneel'
   or: 'of'
@@ -146,6 +178,7 @@ nl:
     none: '<geen>'
     normal: '<normaal>'
   settings: 'Instellingen'
+  show_all: 'Alle tonen'
   slug: 'Slug'
   snippet: 'Snippet'
   snippets: 'Snippets'
@@ -180,6 +213,16 @@ nl:
     by: 'door'
     last_updated: 'Laatst bijgewerkt'
   type: 'Type'
+  units:
+    GB: "GB"
+    KB: "KB"
+    MB: "MB"
+    days: "dagen"
+    hours: "uren"
+    minutes: "minuten"
+    months: "maanden"
+    seconds: "seconden"
+    weeks: "weken"
   user: 'Gebruiker'
   username: 'Gebruikersnaam'
   username_or_email: 'Gebruikersnaam of e-mailadres'
@@ -188,7 +231,9 @@ nl:
     cannot_delete_self: 'Je kan jezelf niet verwijderen.'
   version: 'Versie'
   view_site: 'Bekijk Site'
+  warning: "Waarschuwing: "
   website: 'Website'
   welcome_controller:
     invalid_user: 'Onbekende gebruikersnaam, e-mailadres of wachtwoord.'
     logged_out: 'Je bent nu afgemeld.'
+  yes: 'Ja'

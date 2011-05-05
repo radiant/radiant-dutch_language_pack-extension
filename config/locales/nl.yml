@@ -7,10 +7,11 @@ nl:
         blank: 'dit mag niet leeg zijn' # required
         invalid: 'dit komt niet overeen met de verwachtte indeling' #invalid_format
         not_a_number: 'dit moet een getal zijn' # must be number
+        not_a_page: "there must be a page at this address"
         not_permitted: 'dit moet één van de toegelaten waarden zijn' # this must be one of the permitted values
         taken: 'deze naam reeds in gebruik' # name_in_use
-        too_long: 'dit mag maximum {{count}} tekens bevatten' # character_limit
-        too_short: 'dit moet minimum {{count}} tekens bevatten' # character_minimum
+        too_long: 'dit mag maximum %{count} tekens bevatten' # character_limit
+        too_short: 'dit moet minimum %{count} tekens bevatten' # character_minimum
       models:
         page:
           attributes:
@@ -30,11 +31,11 @@ nl:
   add_tab: 'Tab Toevoegen'
   admin: 'Beheerder'
   available_tags: 'Beschikbare Tags'
-  available_tags_for: 'Beschikbare Tags voor {{name}}'
+  available_tags_for: 'Beschikbare Tags voor %{name}'
   body: 'Body'
   breadcrumb: 'Breadcrumb'
   buttons:
-    create: '{{name}} Aanmaken'
+    create: '%{name} Aanmaken'
     save_and_continue: 'Opslaan en verder bewerken'
     save_changes: 'Opslaan'
   cancel: 'Annuleren'
@@ -54,20 +55,16 @@ nl:
         filter: "snippet filter"
     dev:
       host: "dev site domeinnaam"
-    errors:
-      blank: 'dit mag niet blanco zijn'
-      not_a_number: 'dit moet een getal zijn'
-      not_permitted: 'dit moet één van de beschikbare waarden zijn'
     local:
       timezone: "lokale tijdzone"
     site:
       host: "site domein"
-      name: "site naam"
+      title: "site titel"
     user:
       allow_password_reset?: "Paswoord-reset toestaan?"
   content: 'Inhoud'
   content_type: 'InhoudsType'
-  creating_status: '{{model}}&#8230; aan het maken'
+  creating_status: '%{model}&#8230; aan het maken'
   date:
     abbr_day_names: [zo, ma, di, wo, do, vr, za]
     abbr_month_names: [~, jan, feb, mar, apr, mei, jun, jul, aug, sep, okt, nov, dec]
@@ -80,7 +77,7 @@ nl:
     month_names: [~, januari, februari, maart, april, mei, juni, juli, augustus, september, october, november, december]
     order: [ :day, :month, :year ]
   delete_layout: 'Layout verwijderen'
-  delete_pages: '{{pages}} verwijderen'
+  delete_pages: '%{pages} verwijderen'
   delete_snippet: 'Snippet verwijderen'
   delete_user: 'Gebruiker verwijderen'
   description: 'Omschrijving'
@@ -127,6 +124,7 @@ nl:
   optional: 'Optioneel'
   or: 'of'
   page: 'Pagina'
+  page_hierarchy: 'Pagina-hiërarchie van de website'
   page_page: 'Page Part'
   page_title: 'Pagina Titel'
   page_type: 'Pagina Type'
@@ -145,6 +143,7 @@ nl:
   preferences_controller:
     error_updating: 'Er is een fout opgetreden bij het opslaan van je voorkeuren.'
     updated: 'Je voorkeuren zijn bijgewerkt.'
+  preview: 'Voorbeeld'
   published: 'Gepubliceerd'
   published_at: 'Gepuliceerd op'
   published_on: 'Gepuliceerd op'
@@ -155,16 +154,16 @@ nl:
   remove_field: 'Eigenschap Verwijderen'
   remove_layout: 'Layout Verwijderen'
   remove_page: 'Pagina Verwijderen'
-  remove_pages: '{{pages}} Verwijderen'
+  remove_pages: '%{pages} Verwijderen'
   remove_snippet: 'Snippet Verwijderen'
   remove_tab: 'Tab Verwijderen'
   remove_user: 'Gebruiker verwijderen'
   required: 'Vereist'
   resource_controller:
-    not_found: "{{humanized_model_name}} is niet gevonden."
-    removed: "{{humanized_model_name}} is verwijderd."
-    saved: "{{humanized_model_name}} is hieronder opgelsagen."
-    update_conflict: "{{humanized_model_name}} is bijgewerkt sinds sinds het laden. De wijzigingen kunnen niet opgeslagen worden zonder mogelijk verlies van gegevens."
+    not_found: "%{humanized_model_name} is niet gevonden."
+    removed: "%{humanized_model_name} is verwijderd."
+    saved: "%{humanized_model_name} is hieronder opgelsagen."
+    update_conflict: "%{humanized_model_name} is bijgewerkt sinds sinds het laden. De wijzigingen kunnen niet opgeslagen worden zonder mogelijk verlies van gegevens."
     validation_errors: "Er zijn validatiefouten opgetreden tijdens het verwerken van dit formulier. Kijk het formulier aub na en verbeter eventuele fouten om verder te gaan."
   reviewed: 'Nagekeken'
   roles: 'Rollen'

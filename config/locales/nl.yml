@@ -1,5 +1,7 @@
 ---
 nl: 
+  'no': 'Neen'
+  'yes': 'Ja'
   account: 'Account'
   activerecord:
     errors:
@@ -115,7 +117,6 @@ nl:
   new_password: 'Nieuw Wachtwoord'
   new_snippet: 'Nieuwe Snippet'
   new_user: 'Nieuwe Gebruiker'
-  no: 'Neen'
   no_layouts: 'Geen Layouts'
   no_pages: "Geen Pagina's"
   no_snippets: "Geen Snippets"
@@ -235,4 +236,3 @@ nl:
   welcome_controller:
     invalid_user: 'Onbekende gebruikersnaam, e-mailadres of wachtwoord.'
     logged_out: 'Je bent nu afgemeld.'
-  yes: 'Ja'

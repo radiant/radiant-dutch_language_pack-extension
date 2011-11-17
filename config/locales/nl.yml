@@ -37,7 +37,7 @@ nl:
   body: 'Body'
   breadcrumb: 'Breadcrumb'
   buttons:
-    create: '%{name} Aanmaken'
+    create: '%{name} aanmaken'
     save_and_continue: 'Opslaan en verder bewerken'
     save_changes: 'Opslaan'
   cancel: 'Annuleren'
@@ -76,8 +76,11 @@ nl:
       long: "%e %B %Y"
       only_day: "%e"
       short: "%e %b"
-    month_names: [~, januari, februari, maart, april, mei, juni, juli, augustus, september, october, november, december]
-    order: [ :day, :month, :year ]
+    month_names: [~, januari, februari, maart, april, mei, juni, juli, augustus, september, oktober, november, december]
+    order: 
+      - :day
+      - :month
+      - :year
   delete_layout: 'Layout verwijderen'
   delete_pages: '%{pages} verwijderen'
   delete_snippet: 'Snippet verwijderen'
